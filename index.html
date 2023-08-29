@@ -5,10 +5,19 @@
 <title>解答</title>
 </head>
 <body>
-<p>問題1<br>
-<input type="text" id="text1"></p>
-<input type="button" value="解答" onclick="clickBtn1()" />
-<p>結果 <span id ="ans1"></span></p>
-</script>
+<p>問題1</p>
+<div class="btn-container">
+  <button id="btn1">問1の正解を見る</button>
+  <p id="btn1-text" class="hidden">こんにちは</p>
+</div>
+
+<script>
+  const btn1 = document.getElementByID('btn1');
+  const btn1Text = document.getElementByID('btn1-text');
+
+  btn1.addEventListener('click', () => {
+    btn1Text.classList.toggle('hidden');
+  });
+  
 </body>
 </html>
