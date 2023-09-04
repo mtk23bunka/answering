@@ -5,19 +5,21 @@
 <title>解答</title>
 </head>
 <body>
-<p>問題1</p>
-<div class="btn-container">
-  <button id="btn1">問1の正解を見る</button>
-  <p id="btn1-text" class="hidden">こんにちは</p>
-</div>
+	
+<p><b>問題1:</b></p>
+<p><input type="button" value="ヒントを見る" onclick="btnClick1_h1()"/></p>
+<p id="ans1_h1"></p>
+<p><input type="button" value="解答を見る" onclick="btnClick1_ans()"/></p>
+<p id="ans1_ans"></p>
 
-<script>
-  const btn1 = document.getElementByID('btn1');
-  const btn1Text = document.getElementByID('btn1-text');
-
-  btn1.addEventListener('click', () => {
-    btn1Text.classList.toggle('hidden');
-  });
-  
+<script type="text/javascript">
+	function btnClick1_h1() {
+		document.getElementById("ans1_h1").innerHTML = "「ある」は日本語独自のものである";
+	}
+	function btnClick1_ans() {
+		document.getElementById("ans1_ans").innerHTML = "「ある」はものを数える単位になる";
+	}
+</script>
+	
 </body>
 </html>
