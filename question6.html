@@ -6,18 +6,23 @@
 </head>
 <body>
 	
-<p><b>問題1:</b></p>
-<p><input type="button" value="ヒントを見る" onclick="btnClick1_h1()"/></p>
+<p><b>問題6:</b></p>
+<p><input type="button" value="ヒント1を見る" onclick="btnClick1_h1()"/></p>
 <p id="ans1_h1"></p>
+<p><input type="button" value="ヒント2を見る" onclick="btnClick1_h2()"/></p>
+<p id="ans1_h2"></p>
 <p><input type="button" value="解答を見る" onclick="btnClick1_ans()"/></p>
 <p id="ans1_ans"></p>
 
 <script type="text/javascript">
 	function btnClick1_h1() {
-		document.getElementById("ans1_h1").innerHTML = "「ある」は日本語独自のものである";
+		document.getElementById("ans1_h1").innerHTML = "マスには楽器の英語名が入る";
+	}
+	function btnClick1_h2() {
+		document.getElementById("ans1_h2").innerHTML = "「I」は1を、「VI」は6を表す";
 	}
 	function btnClick1_ans() {
-		document.getElementById("ans1_ans").innerHTML = "「ある」はものを数える単位になる";
+		document.getElementById("ans1_ans").innerHTML = "0";
 	}
 </script>
 	
